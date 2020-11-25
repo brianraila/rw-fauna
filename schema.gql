@@ -1,0 +1,10 @@
+type Listing {
+  title: String!,
+  description: String!,
+  location: String!
+  company: String!
+}
+
+type Query{
+  listings: [Listing]
+}
