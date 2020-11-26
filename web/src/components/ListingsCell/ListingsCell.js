@@ -1,4 +1,4 @@
-// web/src/components/PostsCell/PostsCell.js
+// web/src/components/ListingsCell/ListingsCell.js
 
 export const QUERY = gql`
   query LISTINGS {
@@ -20,13 +20,15 @@ export const Failure = ({ error }) => <div>Error: {error.message}</div>
 export const Success = ({ listings }) => {
   const {data} = listings
   return (
-    <div>
+    <div style={{maxWidth:"50%", margin:"auto"}}>
       {data.map(listing => (
         <>
+        <div style={{border: "black 1pt solid", padding: ".7em"}}>
         <h4>{listing.title}</h4>
         <p>{listing.description}</p>
-        <p>Location: {listing.location}</p>
-        <p>Org: {listing.company}</p>
+        <p>Organization: {listing.company} <br/>
+        Location: {listing.location}</p>
+        </div>
         </>
       ))}
     </div>
