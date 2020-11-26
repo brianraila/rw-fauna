@@ -23,12 +23,14 @@ export const Success = ({ listings }) => {
     <div style={{maxWidth:"50%", margin:"auto"}}>
       {data.map(listing => (
         <>
-        <div style={{border: "black 1pt solid", padding: ".7em"}}>
+        <div style={{border: "black 1pt solid", padding: ".7em", backgroundColor:"cyan"}}>
         <h4>{listing.title}</h4>
+        <hr />
         <p>{listing.description}</p>
         <p>Organization: {listing.company} <br/>
         Location: {listing.location}</p>
         </div>
+        <br/>
         </>
       ))}
     </div>
