@@ -1,2 +1,2 @@
 
-#### This is the sample code for How to create a Job Board with Fauna and Redwood.js.
+#### This is code for a Job Board Application created with Fauna and Redwood.js.
