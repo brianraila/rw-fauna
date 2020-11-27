@@ -1,2 +1,2 @@
 
-#### This is code for a Job Board Application created with Fauna and Redwood.js.
+#### This is code for a Job Board App created with Fauna and Redwood.js.
